@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="offers.css">
+	<title>Offers</title>
+</head>
+<body>
+	<header>
+		<div class="navigation-container" id="navigation-container">
+			<button class="header-logo"><img src="../../assets/besides-logo.png"></button>
+			<div class="item-container"><span id="header-create-offers">Publier une offre</span></div>
+			<div class="spacer">|</div>
+			<div class="item-container"><span id="header-create-company">Ajouter mon entreprise</span></div>
+		</div>
+
+		<div class="profile-container">
+			<div class="item-container">
+				<svg viewBox="0 0 24 24"><path d="M6 8C6 4.6863 8.6863 2 12 2 15.3137 2 18 4.6863 18 8 18 11.3137 15.3137 14 12 14 8.6863 14 6 11.3137 6 8ZM5.4309 16.9025C7.0559 16.2213 9.2233 16 12 16 14.771 16 16.9351 16.2204 18.5586 16.8981 20.3012 17.6255 21.3708 18.8613 21.941 20.6587 22.1528 21.3267 21.6518 22 20.9592 22H3.0346C2.3448 22 1.8468 21.3297 2.0569 20.6654 2.6254 18.8681 3.6912 17.6318 5.4309 16.9025Z"></path></svg>
+				<span id="header-username"></span>
+			</div>
+			<div class="spacer">|</div>
+			<div class="item-container">
+				<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+				<span id="signout">Déconnexion</span>
+			</div>
+		</div>
+	</header>
+
+	<div class="content-wrapper">
+		<div class="wrapper">
+			<div class="search-container">
+				<h1 class="search-title">Trouvez votre Emploi de Rêve</h1>
+				<p class="search-subtitle">Parcourez diverses offres d'emploi et postulez dès aujourd'hui !</p>
+				<div class="search-box">
+					<input type="text" id="search-bar" placeholder="Rechercher des emplois..." class="form-control">
+					<button class="search-button" type="button" id="search-button">
+						<svg viewBox="0 0 32 32"><path d="M27.414 24.586l-5.077-5.077C23.386 17.928 24 16.035 24 14c0-5.514-4.486-10-10-10S4 8.486 4 14s4.486 10 10 10c2.035 0 3.928-.614 5.509-1.663l5.077 5.077c.78.781 2.048.781 2.828 0C28.195 26.633 28.195 25.367 27.414 24.586zM7 14c0-3.86 3.14-7 7-7s7 3.14 7 7-3.14 7-7 7S7 17.86 7 14z"/></svg>
+					</button>
+				</div>
+			</div>
+
+			<div class="recommended-offers">
+				<div class="recommended-offers-title">Offres recommandées</div>
+			</div>
+			
+			<div class="offers-container" id="offers-container"></div>
+		</div>
+	</div>
+
+	<script type="module" src="../../modules/offer.module.js"></script>
+</body>
+</html>
